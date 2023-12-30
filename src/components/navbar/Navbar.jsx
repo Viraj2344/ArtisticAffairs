@@ -148,7 +148,8 @@ function Navbar() {
                     <RxCross2 />
                   </button>
                 </div>
-                <div className='ham space-y-6 border-t  px-4 py-6'>
+                <div className='ham  space-y-6 border-t  px-4 py-6'
+                style={{fontFamily:'Lilita One'}}>
                 <div>
                   <Link to={'/allproducts'} className=' font-medium text-white' style={{ color: mode === 'dark' ? 'white' : '' }}>
                     All Products
@@ -232,8 +233,9 @@ function Navbar() {
             </div>
 
             <div className='flex items-center  '>
-              <div className='hidden  lg:flex lg:flex-1 lg:items-center lg:justify-center lg:space-x-6'>
-                <Link to={'/allproducts'} className=' font-medium text-xl flex items-center' style={{ color: mode === 'dark' ? 'white' : '' }}>
+              <div className='hidden  lg:flex lg:flex-1 lg:items-center lg:justify-center lg:space-x-6'
+              >
+                <Link to={'/allproducts'} className=' font-medium text-xl flex items-center' style={{  color: mode === 'dark' ? 'white' : '' }}>
                   <span className='mx-2 text-white'>All Products</span>
                 </Link>
                 <CollectionsDropdown collections={collections} mode={mode} />
