@@ -242,15 +242,7 @@ function Navbar() {
                 <Link to={'/customcases'} className=' font-medium text-xl flex items-center' style={{ color: mode === 'dark' ? 'white' : '' }}>
                   <span className='mx-2 text-white'>Custom Products</span>
                 </Link>
-                {user ? (
-                  <Link to={'/order'} className=' font-medium text-xl flex items-center' style={{ color: mode === 'dark' ? 'white' : '' }}>
-                    <span className='mx-2 text-white'>Order</span>
-                  </Link>
-                ) : (
-                  <Link to={'/signup'} className=' font-medium text-xl flex items-center' style={{ color: mode === 'dark' ? 'white' : '' }}>
-                    <span className='mx-2 text-white'>Signup</span>
-                  </Link>
-                )}
+       
                 {user?.user?.email === 'virajbakshi083@gmail.com' ? (
                   <Link to={'/dashboard'} className=' font-medium text-xl flex items-center' style={{ color: mode === 'dark' ? 'white' : '' }}>
                     <span className='mx-2 text-white'>Admin</span>
