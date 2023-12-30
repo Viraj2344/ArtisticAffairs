@@ -25,7 +25,7 @@ const ProductCard = () => {
           target="_blank"
           rel="noopener noreferrer"
           className="productcard group relative flex-shrink-0 overflow-hidden bg-gray-100 hover:bg-gray-300 rounded-2xl transition duration-300 transform hover:scale-105"
-          style={{ minWidth: '250px', maxWidth: '380px', height: '380px' }}
+          style={{ minWidth: '250px', maxWidth: '350px', height: '350px' }}
         >
           {media.type === 'video' ? (
             <video
