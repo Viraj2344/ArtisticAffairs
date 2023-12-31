@@ -139,14 +139,21 @@ function Navbar() {
                 style={{ backgroundColor: mode === 'dark' ? 'rgb(40, 44, 52)' : '', color: mode === 'dark' ? 'white' : '' }}
               >
                 <div className='flex px-4 pb-2 pt-4'>
-                  <button
-                    type='button'
-                    className='-m-2 inline-flex items-center justify-center rounded-md p-2 text-gray-400'
-                    onClick={() => setOpen(false)}
-                    aria-label='Close menu'
-                  >
-                    <RxCross2 />
-                  </button>
+               
+<button
+  type='button'
+  className={`rounded-md p-2 text-white-400 lg:hidden ${open ? 'open' : ''}`}
+  onClick={() => setOpen(!open)}
+  aria-label='Open menu'
+  style={{ backgroundColor: mode === 'dark' ? 'rgb(80 82 87)' : '', color: mode === 'dark' ? 'white' : '' }}
+>
+  <span className='sr-only'>{open ? 'Close menu' : 'Open menu'}</span>
+  <div className="hamburger-icon">
+    <div className={`line ${open ? 'cross' : ''}`}></div>
+    <div className={`line ${open ? 'hidden' : ''}`}></div>
+    <div className={`line ${open ? 'cross' : ''}`}></div>
+  </div>
+</button>
                 </div>
                 <div className='ham  space-y-6 border-t  px-4 py-6'
                 style={{fontFamily:'Lilita One'}}>
