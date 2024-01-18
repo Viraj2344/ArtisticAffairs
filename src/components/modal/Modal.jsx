@@ -1,6 +1,7 @@
 import { Dialog, Transition } from '@headlessui/react';
 import { Fragment, useState } from 'react';
 
+
 export default function Modal({
   name,
   address,
@@ -11,6 +12,7 @@ export default function Modal({
   setPincode,
   setPhoneNumber,
   buyNow,
+  
 }) {
   const [isOpen, setIsOpen] = useState(false);
   const [isFormComplete, setIsFormComplete] = useState(false);
@@ -30,6 +32,7 @@ export default function Modal({
       address.trim() !== '' &&
       pincode.trim() !== '' &&
       phoneNumber.trim() !== '';
+
 
     setIsFormComplete(formComplete);
   };

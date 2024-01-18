@@ -1,0 +1,357 @@
+[
+ {
+  "Phone Model": "Iphone 13 ",
+  "Case Type 1": "Hard Case",
+  "Case Type 2": "Silicon Case"
+ },
+ {
+  "Phone Model": "IPHONE 12",
+  "Case Type 1": "Hard Case",
+  "Case Type 2": "Silicon Case",
+  "Case Type 3": "Glass Case"
+ },
+ {
+  "Phone Model": "SAMSUNG S22",
+  "Case Type 1": "Hard Case",
+  "Case Type 2": "Silicon Case",
+  "Case Type 3": "Glass Case"
+ },
+ {
+  "Phone Model": "ONEPLUS 9 PRO",
+  "Case Type 1": "Hard Case",
+  "Case Type 2": "Silicon Case",
+  "Case Type 3": "Glass Case"
+ },
+ {
+  "Phone Model": "OPPO A17",
+  "Case Type 1": "Hard Case",
+  "Case Type 2": "Silicon Case",
+  "Case Type 3": "Glass Case"
+ },
+ {
+  "Phone Model": "VIVO Y21 2021",
+  "Case Type 1": "Hard Case",
+  "Case Type 2": "Silicon Case",
+  "Case Type 3": "Glass Case"
+ },
+ {
+  "Phone Model": "Poco M5 4G",
+  "Case Type 1": "Hard Case",
+  "Case Type 2": "Silicon Case",
+  "Case Type 3": "Glass Case"
+ },
+ {
+  "Phone Model": "IPHONE 14 PRO",
+  "Case Type 1": "Hard Case",
+  "Case Type 2": "Silicon Case",
+  "Case Type 3": "Glass Case"
+ },
+ {
+  "Phone Model": "SAMSUNG S23 PLUS",
+  "Case Type 1": "Hard Case",
+  "Case Type 2": "Silicon Case",
+  "Case Type 3": "Glass Case"
+ },
+ {
+  "Phone Model": "ONEPLUS NORD CE2",
+  "Case Type 1": "Hard Case",
+  "Case Type 2": "Silicon Case",
+  "Case Type 3": "Glass Case"
+ },
+ {
+  "Phone Model": "OPPO A17K",
+  "Case Type 1": "Hard Case",
+  "Case Type 2": "Silicon Case",
+  "Case Type 3": "Glass Case"
+ },
+ {
+  "Phone Model": "VIVO Y51 2020",
+  "Case Type 1": "Hard Case",
+  "Case Type 2": "Silicon Case",
+  "Case Type 3": "Glass Case"
+ },
+ {
+  "Phone Model": "REDMI NOTE 9",
+  "Case Type 1": "Hard Case",
+  "Case Type 2": "Silicon Case",
+  "Case Type 3": "Glass Case"
+ },
+ {
+  "Phone Model": "IPHONE 12 PRO MAX",
+  "Case Type 1": "Hard Case",
+  "Case Type 2": "Silicon Case",
+  "Case Type 3": "Glass Case"
+ },
+ {
+  "Phone Model": "SAMSUNG A14",
+  "Case Type 1": "Hard Case",
+  "Case Type 2": "Silicon Case",
+  "Case Type 3": "Glass Case"
+ },
+ {
+  "Phone Model": "ONEPLUS NORD 2T",
+  "Case Type 1": "Hard Case",
+  "Case Type 2": "Silicon Case",
+  "Case Type 3": "Glass Case"
+ },
+ {
+  "Phone Model": "OPPO A16K",
+  "Case Type 1": "Hard Case",
+  "Case Type 2": "Silicon Case",
+  "Case Type 3": "Glass Case"
+ },
+ {
+  "Phone Model": "VIVO Y50",
+  "Case Type 1": "Hard Case",
+  "Case Type 2": "Silicon Case",
+  "Case Type 3": "Glass Case"
+ },
+ {
+  "Phone Model": "REDMI NOTE 12 PRO +",
+  "Case Type 1": "Hard Case",
+  "Case Type 2": "Silicon Case",
+  "Case Type 3": "Glass Case"
+ },
+ {
+  "Phone Model": "IPHONE X",
+  "Case Type 1": "Hard Case",
+  "Case Type 2": "Silicon Case",
+  "Case Type 3": "Glass Case"
+ },
+ {
+  "Phone Model": "SAMSUNG S23 ULTRA",
+  "Case Type 1": "Hard Case",
+  "Case Type 2": "Silicon Case",
+  "Case Type 3": "Glass Case"
+ },
+ {
+  "Phone Model": "ONEPLUS 10R",
+  "Case Type 1": "Hard Case",
+  "Case Type 2": "Silicon Case",
+  "Case Type 3": "Glass Case"
+ },
+ {
+  "Phone Model": "OPPO F19 PRO",
+  "Case Type 1": "Hard Case",
+  "Case Type 2": "Silicon Case",
+  "Case Type 3": "Glass Case"
+ },
+ {
+  "Phone Model": "VIVO Y81i",
+  "Case Type 1": "Hard Case",
+  "Case Type 2": "Silicon Case",
+  "Case Type 3": "Glass Case"
+ },
+ {
+  "Phone Model": "REDMI 10A",
+  "Case Type 1": "Hard Case",
+  "Case Type 2": "Silicon Case",
+  "Case Type 3": "Glass Case"
+ },
+ {
+  "Phone Model": "IPHONE 14 PRO MAX",
+  "Case Type 1": "Hard Case",
+  "Case Type 2": "Silicon Case",
+  "Case Type 3": "Glass Case"
+ },
+ {
+  "Phone Model": "SAMSUNG A14",
+  "Case Type 1": "Hard Case",
+  "Case Type 2": "Silicon Case",
+  "Case Type 3": "Glass Case"
+ },
+ {
+  "Phone Model": "ONEPLUS NORD CE 2 LITE",
+  "Case Type 2": "Silicon Case",
+  "Case Type 3": "Glass Case"
+ },
+ {
+  "Phone Model": "OPPO A16"
+ },
+ {
+  "Phone Model": "VIVO Y17"
+ },
+ {
+  "Phone Model": "REDMI NOTE 11"
+ },
+ {
+  "Phone Model": "IPHONE 14 PLUS"
+ },
+ {
+  "Phone Model": "SAMSUNG S20FE"
+ },
+ {
+  "Phone Model": "ONEPLUS 9"
+ },
+ {
+  "Phone Model": "OPPO A12"
+ },
+ {
+  "Phone Model": "VIVO Y91I"
+ },
+ {
+  "Phone Model": "REDMI 9 POWER"
+ },
+ {
+  "Phone Model": "IPHONE 11"
+ },
+ {
+  "Phone Model": "Samsung F23 5G"
+ },
+ {
+  "Phone Model": "ONEPLUS 7T"
+ },
+ {
+  "Phone Model": "OPPO RENO 8 PRO"
+ },
+ {
+  "Phone Model": "VIVO V23E 5G"
+ },
+ {
+  "Phone Model": "REDMI NOTE 9 PRO"
+ },
+ {
+  "Phone Model": "IPHONE 13 PRO MAX"
+ },
+ {
+  "Phone Model": "SAMSUNG A54 5G"
+ },
+ {
+  "Phone Model": "ONEPLUS 8"
+ },
+ {
+  "Phone Model": "OPPO RENO 7 PRO 5g"
+ },
+ {
+  "Phone Model": "VIVO V20"
+ },
+ {
+  "Phone Model": "REDMI NOTE 8"
+ },
+ {
+  "Phone Model": "IPHONE 14"
+ },
+ {
+  "Phone Model": "SAMSUNG S23"
+ },
+ {
+  "Phone Model": "ONEPLUS NORD CE 2 LITE"
+ },
+ {
+  "Phone Model": "OPPO REALME 8"
+ },
+ {
+  "Phone Model": "VIVO Y95"
+ },
+ {
+  "Phone Model": "REDMI A1 2022"
+ },
+ {
+  "Phone Model": "IPHONE 13 PRO"
+ },
+ {
+  "Phone Model": "SAM S21FE"
+ },
+ {
+  "Phone Model": "OPPO REALME 8 PRO"
+ },
+ {
+  "Phone Model": "VIVO V23"
+ },
+ {
+  "Phone Model": "Redmi A1 plus 2022"
+ },
+ {
+  "Phone Model": "IPHONE XR"
+ },
+ {
+  "Phone Model": "OPPO F19 PRO PLUS"
+ },
+ {
+  "Phone Model": "VIVO V21"
+ },
+ {
+  "Phone Model": "REDMI NOTE 7"
+ },
+ {
+  "Phone Model": "IPHONE 7"
+ },
+ {
+  "Phone Model": "OPPO REALME 7 PRO"
+ },
+ {
+  "Phone Model": "VIVO Y56"
+ },
+ {
+  "Phone Model": "REDMI 9 prime"
+ },
+ {
+  "Phone Model": "IPHONE 13"
+ },
+ {
+  "Phone Model": "OPPO RENO 7"
+ },
+ {
+  "Phone Model": "VIVO V27"
+ },
+ {
+  "Phone Model": "REDMI NOTE 10"
+ },
+ {
+  "Phone Model": "IPHONE 12 PRO"
+ },
+ {
+  "Phone Model": "OPPO REALME 7"
+ },
+ {
+  "Phone Model": "VIVO V27 PRO"
+ },
+ {
+  "Phone Model": "REDMI 10"
+ },
+ {
+  "Phone Model": "Oppo A78"
+ },
+ {
+  "Phone Model": "VIVO Y100"
+ },
+ {
+  "Phone Model": "REDMI 10 PRIME"
+ },
+ {
+  "Phone Model": "RENO 8T 5G"
+ },
+ {
+  "Phone Model": "VIVO Y33"
+ },
+ {
+  "Phone Model": "REDMI 8A"
+ },
+ {
+  "Phone Model": "OPPO F21 PRO 5g"
+ },
+ {
+  "Phone Model": "VIVO Y20"
+ },
+ {
+  "Phone Model": "REDMI NOTE 12 PRO"
+ },
+ {
+  "Phone Model": "REALME 10"
+ },
+ {
+  "Phone Model": "REDMI NOTE 12"
+ },
+ {
+  "Phone Model": "REALME 10 PRO"
+ },
+ {
+  "Phone Model": "REDMI NOTE 10 PRO"
+ },
+ {
+  "Phone Model": "REALME C55"
+ },
+ {
+  "Phone Model": "REDMI NOTE 11 PRO"
+ }
+]

@@ -25,6 +25,7 @@ function myState(props) {
         price: null,
         imageUrl: null,
         category: null,
+        secondCategory:null,
         description: null,
         time: Timestamp.now(),
         date: new Date().toLocaleString(
@@ -38,7 +39,7 @@ function myState(props) {
     });
 
     const addProduct = async () => {
-        if (products.title == null || products.price == null || products.imageUrl == null || products.category == null || products.description == null) {
+        if (products.title == null || products.price == null || products.imageUrl == null || products.category == null || products.description == null || products.secondCategory ==null) {
             return toast.error("all fields are required")
         }
 

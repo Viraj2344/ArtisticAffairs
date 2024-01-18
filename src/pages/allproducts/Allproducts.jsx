@@ -5,7 +5,7 @@ import myContext from '../../context/data/myContext';
 import { useDispatch, useSelector } from 'react-redux';
 import { addToCart } from '../../redux/cartSlice';
 import ImageGrid from '../../components/imagegrid/Imagegrid';
-
+import './allproducts.css'
 
 function AllProducts() {
   const context = useContext(myContext);
@@ -46,14 +46,14 @@ function AllProducts() {
   return (
     <Layout>
       
-      <section className={`text-gray-600 body-font ${mode === 'dark' ? 'bg-gray-800' : 'bg-white'}`}>
+      <section className={`text-gray-600 body-font ${mode === 'dark' ? 'bg-gray-800' : 'bg-gray-100'}`}>
         <div className="container px-5 py-8 md:py-16 mx-auto"
    
-        style={{ fontFamily:'Lilita One' }}>
+        style={{ fontFamily:'Salsa' }}>
            <div className=" w-auto mb-6 lg:mb-10">
             <h1
               className={` lg:text-6xl text-3xl text-center font-bold title-font mb-2    ${mode === 'dark' ? 'text-white' : 'text-gray-900'}`}
-              style={{ fontFamily:'Lilita One' }}
+              style={{ fontFamily:'Salsa' }}
             >
               Our Latest Collection
             </h1>
@@ -77,50 +77,56 @@ function AllProducts() {
             </select>
           </div>
 
-          <div className="flex flex-wrap -m-4">
-            {product
-              .filter((obj) => obj.title.toLowerCase().includes(searchkey))
-              .filter((obj) => obj.category.toLowerCase().includes(filterType))
-              .filter((obj) => {
-                // Check if discount price is within the selected range
-                const discountPrice = parseFloat(obj.discountprice);
-                const selectedRange = parseFloat(priceRanges[selectedPriceIndex]);
-                return discountPrice <= selectedRange;
-              })
-              .map((item, index) => {
-                const { title, price, imageUrl, id, category, discountprice } = item;
-                return (
-                  <div
-                    key={index}
-                    className={`w-full sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/3 p-2  `}
-                    onClick={() => (window.location.href = `/productinfo/${id}`)}
-                  >
-                    <div
-                      className={`h-full border-2 shadow-lg transition-shadow duration-300 rounded-xl  ease-in-out border-black-500 border-opacity-60  overflow-hidden ${mode === 'dark' ? 'dark-card' : ''}`}
-                    >
-                      <div className="flex justify-center cursor-pointer">
-                        <img
-                          className="w-full h-96 object-cover"
-                          src={imageUrl}
-                          alt="product"
-                        />
-                      </div>
-                      <div className="p-4">
-                        <h2 className={`text-lg font-medium mb-2 ${mode === 'dark' ? 'text-white' : 'text-gray-900'}`}>
-                          {title}
-                        </h2>
-                        <div className='flex flex-row'>
-                          <s className={`text-gray-600 mb-2`}>₹{price}</s>
-                          <p className={`text-gray-600 mb-2 ml-2`}>₹{discountprice}</p>
-                        </div>
-                        <p className={`text-gray-600 mb-2`}>{category}</p>
-                        {/* Additional information or actions can be added here */}
-                      </div>
-                    </div>
-                  </div>
-                );
-              })}
+
+
+<div className="flex flex-wrap -m-2 sm:-m-4">
+  {product
+    .filter((obj) => obj.title.toLowerCase().includes(searchkey))
+    .filter((obj) => obj.category.toLowerCase().includes(filterType))
+    .filter((obj) => {
+      // Check if discount price is within the selected range
+      const discountPrice = parseFloat(obj.discountprice);
+      const selectedRange = parseFloat(priceRanges[selectedPriceIndex]);
+      return discountPrice <= selectedRange;
+    })
+    .map((item, index) => {
+      const { title, price, imageUrl, id, category, discountprice } = item;
+      return (
+        <div
+        key={index}
+        className={`w-half sm:w-1/2 md:w-1/3 lg:w-1/3 xl:w-1/3 p-1`}
+
+        onClick={() => (window.location.href = `/productinfo/${id}`)}
+      >
+        <div
+          className={`h-full border-2 shadow-lg transition-shadow duration-300 rounded-xl  ease-in-out border-black-500 border-opacity-60  overflow-hidden ${mode === 'dark' ? 'dark-card' : ''}`}
+        >
+          <div className="flex justify-center cursor-pointer">
+            <img
+              className="w-full h-56 sm:h-64 object-contain bg-white"
+              src={imageUrl}
+              alt="product"
+            />
           </div>
+          <div className="p-4">
+            <h2 className={`text-lg font-medium mb-2 ${mode === 'dark' ? 'text-white' : 'text-gray-900'}`}>
+              {title}
+            </h2>
+            <div className='flex flex-row'>
+            <s className={`text-gray-600 mb-2`}>₹{price}</s>
+            <p className={`text-gray-600 mb-2 ml-2`}>₹{discountprice}</p>
+            </div>
+            <p className={`text-gray-600 mb-2`}>{category}</p>
+            {/* Additional information or actions can be added here */}
+          </div>
+        </div>
+      </div>
+      );
+    })}
+</div>
+
+
+
         </div>
       </section>
     </Layout>

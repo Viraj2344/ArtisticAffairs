@@ -22,7 +22,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import Allproducts from './pages/allproducts/Allproducts';
 import SareeCases from './pages/sareecases/SareeCases';
 import MarvelCases from './pages/marvelcases/MarvelCases';
-import AbstractCases from './pages/abstractcases/AbstractCases';
+import AestheticCases from './pages/aestheticcases/AestheticCases';
 import TravelCases from './pages/travelcases/TravelCases';
 import HippieTrippieCases from './pages/hippietrippiecases/HippieTrippieCases';
 import AnimeCases from './pages/animecases/AnimeCases';
@@ -32,10 +32,11 @@ import MusicCases from './pages/musiccases/MusicCases';
 import CarsBikesCases from './pages/carsbikescases/CarsBikesCases';
 import GamingCases from './pages/gamingcases/GamingCases';
 import CustomCases from './pages/customcases/CustomCases';
+import Dairies from './pages/dairies/dairies';
+import HardCases from './pages/hardcases/hardCases';
+import SiliconCases from './pages/siliconcases/SiliconCases';
 import GlassCases from './pages/glasscases/GlassCases';
-
-
-
+import Mugs from './pages/mugs/mugs';
 
 function App() {
   return (
@@ -46,7 +47,7 @@ function App() {
           <Route path="/allproducts" element={<Allproducts />} />
           <Route path="/sareecases" element={<SareeCases />} />
           <Route path="/marvelcases" element={<MarvelCases />} />
-          <Route path="/abstractcases" element={<AbstractCases />} />
+          <Route path="/AestheticCases" element={<AestheticCases />} />
           <Route path="/travelcases" element={<TravelCases />} />
           <Route path="/hippietrippiecases" element={<HippieTrippieCases />} />
           <Route path="/animecases" element={<AnimeCases />} />
@@ -56,7 +57,11 @@ function App() {
           <Route path='/carsbikescases' element={<CarsBikesCases />}/>
           <Route path='/customcases' element={<CustomCases/>}/> 
           <Route path='/gamingcases' element={<GamingCases />}/>
+          <Route path='/dairies' element={<Dairies />}/>
+          <Route path='/hardCases' element={<HardCases />}/>
+          <Route path='/siliconcases' element={<SiliconCases />}/>
           <Route path='/glasscases' element={<GlassCases />}/>
+          <Route path='/mugs' element={<Mugs />}/>
 
           
           <Route path="/order" element={

@@ -9,7 +9,7 @@ import './herosection.css';
 function HeroSection() {
   const images = [
     {
-      desktop: 'https://slickstiles.com/cdn/shop/files/Celebrate_Love_1080x1080_-_Copy.jpg?v=1701368375&width=800',
+      desktop: 'assets/Untitled design (31).PNG',
       mobile: 'https://slickstiles.com/cdn/shop/files/Celebrate_Love_1080x1080_8e60ff1b-8583-4155-bf6e-304d41c37dae.jpg?v=1701367568&width=800',
     },
     {
@@ -20,9 +20,9 @@ function HeroSection() {
   ];
 
   const settings = {
-    dots: false,
+    dots: true,
     infinite: true,
-    speed: 1500,
+    speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
     fade: true,
@@ -41,6 +41,7 @@ function HeroSection() {
               src={window.innerWidth <= 768 ? image.mobile : image.desktop}
               alt={`Slide ${index + 1}`}
             />
+            <a href="/allproducts"><button className='shop-now-button rounded-full'>SHOP NOW !!!</button></a> 
           </div>
         ))}
       </Slider>

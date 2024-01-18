@@ -15,6 +15,7 @@ import ProductSpecificationsTable from '../../components/productSpecifications/P
 import SlidingText from '../../components/bestcase/Bestcase'
 import BigText from '../../components/bigcomponent/Bigcomponent'
 import SareeCases from '../sareecases/SareeCases'
+import products from '../../components/products/products'
 
 function Home() {
   return (
@@ -32,7 +33,7 @@ function Home() {
       <ProductSpecificationsTable />
       <HelpSection />
 
-      
+   
       {/* <Testimonial /> */}
     </Layout>
   )

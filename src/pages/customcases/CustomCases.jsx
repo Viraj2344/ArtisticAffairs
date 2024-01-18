@@ -44,10 +44,10 @@ function CustomCases() {
     <Layout>
       <section className="text-gray-600 body-font bg-white">
         <div className="container px-5 py-8 md:py-16 mx-auto"
-        style={{ fontFamily:'Lilita One' }}>
+        style={{ fontFamily:'Salsa' }}>
           <div className=" w-auto mb-6 lg:mb-10">
             <h1 className=" text-center sm:text-lg   lg:text-6xl font-bold title-font mb-2 text-gray-900"
-            style={{ fontFamily:'Lilita One' }}>
+            style={{ fontFamily:'Salsa' }}>
               CUSTOM CASES
             </h1>
 
@@ -63,7 +63,7 @@ function CustomCases() {
                 <div className="h-full border-2 hover:shadow-lg transition-shadow duration-300 ease-in-out border-gray-200 border-opacity-60 overflow-hidden">
                   <div className="flex justify-center cursor-pointer">
                     <img
-                      className="w-full h-96 object-cover"
+                      className="w-full h-96 object-contain bg-white"
                       src={item.imageUrl}
                       alt={item.title}
                     />

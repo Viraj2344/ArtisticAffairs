@@ -47,13 +47,13 @@ function SareeCases() {
   return (
     <Layout>
 
-      <section className={`text-gray-600 body-font ${mode === 'dark' ? 'bg-gray-800' : 'bg-white'}`}>
+      <section className={`text-gray-600 body-font ${mode === 'dark' ? 'bg-gray-800' : 'bg-gray-100'}`}>
         <div className="container px-5 py-8 md:py-16 mx-auto"
-        style={{ fontFamily:'Lilita One' }}>
+        style={{ fontFamily:'Salsa' }}>
            <div className=" w-auto mb-6 lg:mb-10">
             <h1
               className={`lg:text-6xl text-3xl text-center font-bold title-font mb-2  ${mode === 'dark' ? 'text-white' : 'text-gray-900'}`}
-style={{ fontFamily:'Lilita One' }}
+style={{ fontFamily:'Salsa' }}
             >
               SAREE CASES
             </h1>
@@ -75,7 +75,7 @@ style={{ fontFamily:'Lilita One' }}
                     >
                       <div className="flex justify-center cursor-pointer">
                         <img
-                          className="w-full h-96 object-cover"
+                          className="w-full h-96 object-contain bg-white"
                           src={imageUrl}
                           alt="product"
                         />

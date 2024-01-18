@@ -8,20 +8,20 @@ const ProductSpecificationsTable = ({ mode }) => {
 
   const titles = [
     'Glass Case',
-    'Stride Case',
+    'Silicon Case',
     'Hard Case',
   ];
 
   const specifications = [
     'Available for 200+ phone models\n360° edge protection, hard TPU glass on the back for premium print',
-    'Available for iPhone models only\nStrides on the edges provide 6ft drop protection',
+    'Available for iPhone models only\nSilicons on the edges provide 6ft drop protection',
     'Available for 600+ phone models\nPremium print quality, with perfect openings for ports and camera',
   ];
 
   return (
     <div className="container 	 text-white my-3 rounded-xl mx-auto p-4 text-center">
       <h1 className={`text-3xl 	 text-white font-bold mb-2 ${mode === 'dark' ? 'text-white' : 'text-gray-900'}`}
-      style={{ fontFamily:'Lilita One' }}>
+      style={{ fontFamily:'Salsa' }}>
         Product Specifications
       </h1>
       <h5 className="text-sm mb-4 ">

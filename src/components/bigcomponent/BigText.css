@@ -21,7 +21,7 @@
   .small-text span {
     font-size: 2rem; /* Adjust the font size for the small text as needed */
     font-weight: bold;
-    font-family: 'Lilita One', sans-serif;
+    font-family: 'Salsa', sans-serif;
   }
   @media (max-width: 767px){
     .big-text span {

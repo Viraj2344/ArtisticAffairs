@@ -1,10 +1,10 @@
 .image{
     margin: auto;
-    height: 550px;
+    height: 660px;
     object-fit: cover;
     border-radius: 3%;
     padding: 0px;
-    width: 95%;
+    width: 97%;
 
     /* height: fit-content; */
 }
@@ -15,3 +15,22 @@ display: none !important;
 .slick-next {
 display: none !important;
   }
+/* herosection.css */
+.shop-now-button {
+  position: absolute;
+  bottom: 5rem; /* Adjust the value based on your design */
+  left: 6.5rem;   /* Adjust the value based on your design */
+  padding: 30px 40px;
+  font-size: 20px;
+  background-color: #6c77a2; /* You can change the background color */
+  color: #ffffff;           /* You can change the text color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Salsa';
+  /* Add any other styles you want */
+}
+.shop-now-button:hover{
+  background-color: #7792ff;
+  color: black;
+}

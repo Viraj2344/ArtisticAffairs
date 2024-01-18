@@ -8,12 +8,13 @@ import {getAuth} from 'firebase/auth';
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAJWdf1HR9OMmL0WWrvkBsjaEMvVwXDxZ8",
-  authDomain: "artisticaffairs-bcca3.firebaseapp.com",
-  projectId: "artisticaffairs-bcca3",
-  storageBucket: "artisticaffairs-bcca3.appspot.com",
-  messagingSenderId: "445567204765",
-  appId: "1:445567204765:web:33d020620377069ba08374"
+  apiKey: "AIzaSyBg8KeFArelvf2m6J6_A2wG9MhBVKerc5Q",
+  authDomain: "artisticaffairs2.firebaseapp.com",
+  projectId: "artisticaffairs2",
+  storageBucket: "artisticaffairs2.appspot.com",
+  messagingSenderId: "1032759629755",
+  appId: "1:1032759629755:web:592cda3358b80cb262969e",
+  measurementId: "G-9PNL87CS8T"
 };
 
 // Initialize Firebase

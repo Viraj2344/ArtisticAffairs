@@ -7,10 +7,14 @@ import { FaUser, FaCartPlus } from 'react-icons/fa';
 import { AiFillShopping, AiFillPlusCircle, AiFillDelete } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
 
+
+
+
 function DashboardTab({}) {
+  
   const context = useContext(myContext);
   const { mode, product, edithandle, deleteProduct, order, user } = context;
-
+ 
   let [isOpen, setIsOpen] = useState(false);
 
   function closeModal() {
@@ -158,7 +162,7 @@ function DashboardTab({}) {
                 <h1 className="text-center mb-5 text-3xl text-white font-semibold " style={{ color: mode === 'dark' ? 'white' : '' }}>
                   Order Details
                 </h1>
-                {order.map((allorder, index) => {
+                { order.map((allorder, index) => {
                   return (
                     <table key={index} className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
                       <thead className="text-xs text-black uppercase bg-gray-200" style={{ backgroundColor: mode === 'dark' ? 'rgb(46 49 55)' : '', color: mode === 'dark' ? 'white' : '' }}>
@@ -172,12 +176,22 @@ function DashboardTab({}) {
                                             <th scope="col" className="px-6 py-3">
                                                 Title
                                             </th>
+                                            
                                             <th scope="col" className="px-6 py-3">
                                                 Price
                                             </th>
-                                            
                                             <th scope="col" className="px-6 py-3">
                                                 Category
+                                            </th>
+                                      
+                                            <th scope="col" className="px-6 py-3">
+                                             Coupon Code
+                                            </th>
+                                            <th scope="col" className="px-6 py-3">
+                                             Phone Model
+                                            </th>
+                                            <th scope="col" className="px-6 py-3">
+                                             Case Type
                                             </th>
                                             <th scope="col" className="px-6 py-3">
                                                 Name
@@ -205,10 +219,10 @@ function DashboardTab({}) {
                                     </thead>
                                     {allorder.cartItems.map((item,index)=>{
                                         // console.log(allorder)
-                                        const {title,description,category,imageUrl,price} = item;
+                                        const {title,category,imageUrl,price,discountprice,selectedPhoneModel,selectedCaseType} = item;
                                         return(
                                             <tbody>
-                                        <tr className="bg-gray-50 border-b  dark:border-gray-700" style={{ backgroundColor: mode === 'dark' ? 'rgb(46 49 55)' : '', color: mode === 'dark' ? 'white' : '', }} >
+                                        <tr  key={index} className="bg-gray-50 border-b  dark:border-gray-700" style={{ backgroundColor: mode === 'dark' ? 'rgb(46 49 55)' : '', color: mode === 'dark' ? 'white' : '', }} >
                                             <td className="px-6 py-4 text-black " style={{ color: mode === 'dark' ? 'white' : '' }}>
                                                 {allorder.paymentId}
                                             </td>
@@ -218,14 +232,23 @@ function DashboardTab({}) {
                                             <td className="px-6 py-4 text-black " style={{ color: mode === 'dark' ? 'white' : '' }}>
                                                 {title}
                                             </td>
-                                            <td className="px-6 py-4 text-black " style={{ color: mode === 'dark' ? 'white' : '' }}>
-                                                ₹{price}
-                                            </td>
                                            
+                                            <td className="px-6 py-4 text-black " style={{ color: mode === 'dark' ? 'white' : '' }}>
+                                                ₹{discountprice}
+                                            </td>
                                             <td className="px-6 py-4 text-black " style={{ color: mode === 'dark' ? 'white' : '' }}>
                                                {category}
                                             </td>
-
+                                  
+                                            <td className="px-6 py-4 text-black " style={{ color: mode === 'dark' ? 'white' : '' }}>
+                                               {allorder.couponCode}
+                                            </td>
+                                            <td className="px-6 py-4 text-black " style={{ color: mode === 'dark' ? 'white' : '' }}>
+                                               {selectedPhoneModel}
+                                            </td>
+                                            <td className="px-6 py-4 text-black " style={{ color: mode === 'dark' ? 'white' : '' }}>
+                                               {selectedCaseType}
+                                            </td>
                                             <td className="px-6 py-4 text-black " style={{ color: mode === 'dark' ? 'white' : '' }}>
                                                 {allorder.addressInfo.name}
                                             </td>
@@ -280,7 +303,7 @@ function DashboardTab({}) {
                                         </tr>
                                     </thead>
                                    {user.map((item,index)=>{
-                                    const {name,uid,email,date,phoneModel} = item;
+                                    const {name,uid,email,date} = item;
                                     return(
                                         <tbody>
                                         <tr className="bg-gray-50 border-b  dark:border-gray-700" style={{ backgroundColor: mode === 'dark' ? 'rgb(46 49 55)' : '', color: mode === 'dark' ? 'white' : '', }} >

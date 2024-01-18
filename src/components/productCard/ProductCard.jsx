@@ -5,7 +5,7 @@ const ProductCard = () => {
     { type: 'image', src: 'https://slickstiles.com/cdn/shop/files/Pink_Watercolor_Abstract_Cozy_Vibes_Square_Pillow.png?v=1693224267&width=1000', link: '/allproducts', text: 'All Collections' },
     { type: 'image', src: 'https://mind-spark.org/artisticaffairs/assets/anime.PNG', link: '/animecases', text: '' },
     { type: 'image', src: 'https://mind-spark.org/artisticaffairs/assets/marvel.PNG', link: '/marvelcases', text: '' },
-    { type: 'image', src: 'https://mind-spark.org/artisticaffairs/assets/asthetic.PNG', link: '/abstractcases', text: '' },
+    { type: 'image', src: 'https://mind-spark.org/artisticaffairs/assets/asthetic.PNG', link: '/aestheticcases', text: '' },
     { type: 'image', src: 'https://mind-spark.org/artisticaffairs/assets/taylorswift.PNG', link: '/travelcases', text: '' },
     { type: 'image', src: 'https://slickstiles.com/cdn/shop/files/Pink_Watercolor_Abstract_Cozy_Vibes_Square_Pillow_5.png?v=1693225180&width=1000', link: '/hippietrippiecases', text: 'Hippie Trippie Case' },
     { type: 'image', src: 'https://slickstiles.com/cdn/shop/files/Pink_Watercolor_Abstract_Cozy_Vibes_Square_Pillow.png?v=1693224267&width=1000', link: '/animecases', text: 'Anime Cases' },

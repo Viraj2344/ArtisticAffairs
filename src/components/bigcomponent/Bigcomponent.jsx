@@ -6,7 +6,7 @@ const BigText = () => {
     
     <div className="big-text-container ">
       <div className="big-text">
-        <span style={{ fontFamily:'Lilita One' }}>100%</span>
+        <span style={{ fontFamily:'Salsa' }}>100%</span>
       </div>
       <div className="small-text text-white">
         <span>Premium Print Guarantee</span>
