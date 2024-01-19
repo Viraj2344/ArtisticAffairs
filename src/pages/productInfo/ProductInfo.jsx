@@ -47,6 +47,15 @@ function ProductInfo() {
     const cartItems = useSelector((state) => state.cart);
   
     const addCart = () => {
+        if (!selectedPhoneModel) {
+            toast.error('Please select a phone model first.');
+            return;
+          }
+        
+          if (!selectedCaseType) {
+            toast.error('Please select a case type first.');
+            return;
+          }
         const cartItem = {
           ...product,
           selectedPhoneModel,
