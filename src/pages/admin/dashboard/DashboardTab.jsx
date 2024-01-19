@@ -162,7 +162,9 @@ function DashboardTab({}) {
                 <h1 className="text-center mb-5 text-3xl text-white font-semibold " style={{ color: mode === 'dark' ? 'white' : '' }}>
                   Order Details
                 </h1>
-                { order.map((allorder, index) => {
+                { order
+                .sort((a, b) => new Date(b.date) - new Date(a.date))
+                .map((allorder, index) => {
                   return (
                     <table key={index} className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
                       <thead className="text-xs text-black uppercase bg-gray-200" style={{ backgroundColor: mode === 'dark' ? 'rgb(46 49 55)' : '', color: mode === 'dark' ? 'white' : '' }}>
