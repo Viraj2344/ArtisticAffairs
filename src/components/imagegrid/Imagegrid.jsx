@@ -16,7 +16,7 @@ const ImageGrid = () => {
         <a
           key={index}
           href={media.link}
-          target="_blank"
+
           rel="noopener noreferrer"
           className="group relative flex-shrink-0 overflow-hidden bg-gray-100 hover:bg-gray-300 rounded-2xl transition duration-300 transform hover:scale-105"
           style={{ fontFamily:'Salsa', minWidth: '200px', maxWidth: '160px', height: '240px' /* Set a suitable height for your items */ }}
