@@ -50,13 +50,14 @@ function Cart() {
     // Add more coupon codes as needed
   ];
 
+ 
   const [couponCode, setCouponCode] = useState('');
   const [discountedTotal, setDiscountedTotal] = useState(totalAmount);
+
   const applyCoupon = () => {
- 
     const upperCaseCouponCode = couponCode.toUpperCase();
     // Check if the entered coupon code is valid
-    const validCoupon = couponCodes.find((coupon) => coupon.code === couponCode);
+    const validCoupon = couponCodes.find((coupon) => coupon.code === upperCaseCouponCode);
 
     if (validCoupon) {
       // Calculate the discount based on the valid coupon code
@@ -71,8 +72,8 @@ function Cart() {
     }
   };
 
+  const grandTotal = couponCode ? discountedTotal : totalAmount;
 
-  const grandTotal = discountedTotal;
 
   const [name, setName] = useState('');
   const [address, setAddress] = useState('');
