@@ -34,3 +34,22 @@ display: none !important;
   background-color: #7792ff;
   color: black;
 }
+
+
+.slick-dots li button:before{
+  color: white;
+  font-size: 9px;
+}
+.slick-dots li.slick-active button:before{
+  color: white;
+  font-size: 9px;
+}
+@media (max-width: 768px) {
+  .shop-now-button {
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px;
+    padding: 20px 30px;
+  }
+}
