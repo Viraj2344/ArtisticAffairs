@@ -8,14 +8,14 @@ import {getAuth} from 'firebase/auth';
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBg8KeFArelvf2m6J6_A2wG9MhBVKerc5Q",
-  authDomain: "artisticaffairs2.firebaseapp.com",
-  projectId: "artisticaffairs2",
-  storageBucket: "artisticaffairs2.appspot.com",
-  messagingSenderId: "1032759629755",
-  appId: "1:1032759629755:web:592cda3358b80cb262969e",
-  measurementId: "G-9PNL87CS8T"
-};
+apiKey: "AIzaSyCYdDor17C2RRDuY1w7_Q0G0F7MR-DKByU",
+authDomain: "artistic-affairs.firebaseapp.com",
+projectId: "artistic-affairs",
+storageBucket: "artistic-affairs.appspot.com",
+messagingSenderId: "344517272234",
+appId: "1:344517272234 :web: 5ffc1d00fe02f28bfea6d3", 
+measurementId: "G-Q61EVR98XV"
+} ;
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);

@@ -31,13 +31,13 @@ function CollectionsDropdown({ collections, mode }) {
 
   return (
     <div className='group relative' ref={dropdownRef}>
-      <button
-        className=' block m-auto text-lg md:text-xl lg:text-lg font-medium text-white cursor-pointer focus:outline-none'
-        onClick={() => setIsOpen(!isOpen)}
-        style={{ color: mode === 'dark' ? 'white' : '' }}
-      >
-       Collections ↓
-      </button>
+    <button
+  className='block m-auto text-lg md:text-xl lg:text-lg font-medium text-white cursor-pointer focus:outline-none nav-link'
+  onClick={() => setIsOpen(!isOpen)}
+  style={{ color: mode === 'dark' ? 'white' : '' }}
+>
+  Collections ↓
+</button>
 
 
       <Transition
@@ -235,30 +235,34 @@ function Navbar() {
             <div className='flex items-center  '>
               <div className='hidden  lg:flex lg:flex-1 lg:items-center lg:justify-center lg:space-x-6'
               >
-                <Link to={'/allproducts'} className=' font-medium text-lg flex items-center' style={{  color: mode === 'dark' ? 'white' : '' }}>
-                  <span className='mx-2 text-white'>All Products</span>
-                </Link>
-                <CollectionsDropdown collections={collections} mode={mode} />
-                <Link to={'/customcases'} className=' font-medium text-lg flex items-center' style={{ color: mode === 'dark' ? 'white' : '' }}>
-                  <span className='mx-2 text-white'>Custom Products</span>
-                </Link>
-       
-                {user?.user?.email === 'virajbakshi083@gmail.com' ? (
-                  <Link to={'/dashboard'} className=' font-medium text-lg flex items-center' style={{ color: mode === 'dark' ? 'white' : '' }}>
-                    <span className='mx-2 text-white'>Admin</span>
-                  </Link>
-                ) : (
-                  ''
-                )}
-                {user ? (
-                  <a onClick={logout} className=' font-medium cursor-pointer text-lg flex items-center' style={{ color: mode === 'dark' ? 'white' : '' }}>
-                    <span className='mx-2 text-white'>Logout</span>
-                  </a>
-                ) : (
-                  <Link to={'/signup'} className=' font-medium cursor-pointer text-lg flex items-center' style={{ color: mode === 'dark' ? 'white' : '' }}>
-                    <span className='mx-2 text-white'>Signup</span>
-                  </Link>
-                )}
+     <Link to={'/allproducts'} className='font-medium text-lg flex items-center nav-link' style={{ color: mode === 'dark' ? 'white' : '' }}>
+  <span className='mx-2 text-white'>All Products</span>
+</Link>
+
+<CollectionsDropdown collections={collections} mode={mode} />
+
+<Link to={'/customcases'} className='font-medium text-lg flex items-center nav-link' style={{ color: mode === 'dark' ? 'white' : '' }}>
+  <span className='mx-2 text-white'>Custom Products</span>
+</Link>
+
+{user?.user?.email === 'virajbakshi083@gmail.com' ? (
+  <Link to={'/dashboard'} className='font-medium text-lg flex items-center nav-link' style={{ color: mode === 'dark' ? 'white' : '' }}>
+    <span className='mx-2 text-white'>Admin</span>
+  </Link>
+) : (
+  ''
+)}
+
+{user ? (
+  <a onClick={logout} className='font-medium cursor-pointer text-lg flex items-center nav-link' style={{ color: mode === 'dark' ? 'white' : '' }}>
+    <span className='mx-2 text-white'>Logout</span>
+  </a>
+) : (
+  <Link to={'/signup'} className='font-medium cursor-pointer text-lg flex items-center nav-link' style={{ color: mode === 'dark' ? 'white' : '' }}>
+    <span className='mx-2 text-white'>Signup</span>
+  </Link>
+)}
+
               </div>
 
               <div className='ml-auto flow-root lg:ml-6'>

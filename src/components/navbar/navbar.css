@@ -92,6 +92,53 @@ text-align: center;
     width: 400px !important;
     text-align: center;
   }
+
+  /* Add the following styles to your existing CSS */
+
+/* For all the links you want to have the underline effect */
+.nav-link {
+  position: relative;
+  display: inline-block;
+}
+
+/* Pseudo-element for the underline effect */
+.nav-link::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: white; /* You can change the color as needed */
+  transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+
+/* On hover, expand the underline from the center */
+.nav-link:hover::before {
+  width: 100%;
+  left: 0;
+}
+
+/* For the "Collections" button in the CollectionsDropdown */
+.group .nav-link::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: white; /* You can change the color as needed */
+  transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+
+.group .nav-link:hover::before {
+  width: 100%;
+  left: 0;
+}
+
+
+/* Rest of your existing styles */
+
   /* Rest of your existing CSS styles */
   
   
