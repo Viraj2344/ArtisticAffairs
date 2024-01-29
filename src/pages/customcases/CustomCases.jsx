@@ -10,14 +10,14 @@ const customCasesProducts = [
     id: 1,
     title: 'Wallet Card',
     price: 250.99,
-    imageUrl: 'src/pages/customcases/391610786_17978124047578311_121509455696016605_n.jpg',
+    imageUrl: 'https://artisticaffairs.co.in/images/customcases/391610786_17978124047578311_121509455696016605_n.jpg',
     link: 'https://www.instagram.com/p/CyTE-KtIR5F/?img_index=1',
   },
   {
     id: 2,
     title: 'Temperature Bottles',
     price: 399.99,
-    imageUrl: 'src/pages/customcases/371878108_17972309339578311_3519510129698495544_n.jpg',
+    imageUrl: 'https://artisticaffairs.co.in/images/customcases/371878108_17972309339578311_3519510129698495544_n.jpg',
     link: 'https://www.instagram.com/p/Cwm7-Oso9J9/',
   },
   // Add more products as needed
@@ -46,10 +46,11 @@ function CustomCases() {
         <div className="container px-5 py-8 md:py-16 mx-auto"
         style={{ fontFamily:'Salsa' }}>
           <div className=" w-auto mb-6 lg:mb-10">
-            <h1 className=" text-center sm:text-lg   lg:text-6xl font-bold title-font mb-2 text-gray-900"
+            <h1 className=" text-center sm:text-2xl   lg:text-6xl font-bold title-font mb-2 text-gray-900"
             style={{ fontFamily:'Salsa' }}>
               CUSTOM CASES
             </h1>
+            <h2 className=' text-center sm:text-lg   lg:text-xl font-bold title-font mb-2 text-gray-900'>For custom designs visit our instagram handle</h2>
 
           </div>
 
@@ -85,3 +86,5 @@ function CustomCases() {
 }
 
 export default CustomCases;
+
+

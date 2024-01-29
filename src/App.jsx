@@ -20,24 +20,26 @@ import UpdateProduct from './pages/admin/page/UpdateProduct';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Allproducts from './pages/allproducts/Allproducts';
-import SareeCases from './pages/sareecases/SareeCases';
-import MarvelCases from './pages/marvelcases/MarvelCases';
-import AestheticCases from './pages/aestheticcases/AestheticCases';
-import TravelCases from './pages/travelcases/TravelCases';
-import HippieTrippieCases from './pages/hippietrippiecases/HippieTrippieCases';
-import AnimeCases from './pages/animecases/AnimeCases';
-import CricketCases from './pages/cricketcases/CricketCases';
-import FootballCases from './pages/footballcases/FootballCases';
-import MusicCases from './pages/musiccases/MusicCases';
-import CarsBikesCases from './pages/carsbikescases/CarsBikesCases';
-import GamingCases from './pages/gamingcases/GamingCases';
+import MarvelCollection from './pages/Marvelcollection/MarvelCollection';
+import BTSCollection from './pages/BTSCollection/BTSColleciton';
+import SportsCollection from './pages/SportsCollection/SportsCollection';
+import AestheticCollection from './pages/AestheticCollection/AestheticCollection';
+import GymCollection from './pages/GymCollection/GymCollection';
+import TravelCollection from './pages/TravelCollection/TravelCollection';
+import AnimeCollection from './pages/AnimeCollection/AnimeCollection';
+import MemeCollection from './pages/MemeCollection/MemeCollection';
+import DisneyCollection from './pages/DisneyCollection/DisneyCollection';
 import CustomCases from './pages/customcases/CustomCases';
-import Dairies from './pages/dairies/dairies';
+import ProductInfo2 from './pages/productInfo2/productInfo2';
 import HardCases from './pages/hardcases/hardCases';
 import SiliconCases from './pages/siliconcases/SiliconCases';
-import GlassCases from './pages/glasscases/GlassCases';
 import Mugs from './pages/mugs/mugs';
-
+import Tumblers from './pages/tumblers/Tumblers';
+import PhoneCases from './pages/phonecases/PhoneCases';
+import ProductInfoCustom from './pages/productInfoCustom/productInfoCustom';
+import CaseInfo from './pages/caseinfo/caseInfo';
+import AboutUs from './pages/aboutus/aboutUs';
+import Cans from './pages/Cans/Cans';
 function App() {
   return (
     <MyState>
@@ -45,24 +47,27 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/allproducts" element={<Allproducts />} />
-          <Route path="/sareecases" element={<SareeCases />} />
-          <Route path="/marvelcases" element={<MarvelCases />} />
-          <Route path="/AestheticCases" element={<AestheticCases />} />
-          <Route path="/travelcases" element={<TravelCases />} />
-          <Route path="/hippietrippiecases" element={<HippieTrippieCases />} />
-          <Route path="/animecases" element={<AnimeCases />} />
-          <Route path='/cricketcases' element={<CricketCases />}/>
-          <Route path='/footballcases' element={<FootballCases />}/>
-          <Route path='/musiccases' element={<MusicCases />}/>
-          <Route path='/carsbikescases' element={<CarsBikesCases />}/>
+          <Route path="/MarvelCollection" element={<MarvelCollection />} />
+          <Route path="/BTSCollection" element={<BTSCollection />} />
+          <Route path="/SportsCollection" element={<SportsCollection />} />
+          <Route path="/AestheticCollection" element={<AestheticCollection />} />
+          <Route path="/GymCollection" element={<GymCollection />} />
+          <Route path="/TravelCollection" element={<TravelCollection />} />
+          <Route path="/AnimeCollection" element={<AnimeCollection />} />
+          <Route path="/MemeCollection" element={<MemeCollection />} />
+          <Route path="/DisneyCollection" element={<DisneyCollection />} />
           <Route path='/customcases' element={<CustomCases/>}/> 
-          <Route path='/gamingcases' element={<GamingCases />}/>
-          <Route path='/dairies' element={<Dairies />}/>
+          <Route path='/productInfo2' element={<ProductInfo2/>}/>
           <Route path='/hardCases' element={<HardCases />}/>
           <Route path='/siliconcases' element={<SiliconCases />}/>
-          <Route path='/glasscases' element={<GlassCases />}/>
+          <Route path='/PhoneCases' element={<PhoneCases />}/>
           <Route path='/mugs' element={<Mugs />}/>
-
+          <Route path='/Tumblers' element={<Tumblers />}/>
+          <Route path='/productInfoCustom' element={<ProductInfoCustom />}/>
+          <Route path='/caseinfo' element={<CaseInfo />}/>
+          <Route path='/aboutUs' element={<AboutUs />}/>
+          <Route path='/Cans' element={<Cans />}/>
+        
           
           <Route path="/order" element={
             <ProtectedRoute>
@@ -78,6 +83,7 @@ function App() {
           <Route path='/login' element={<Login/>} />
           <Route path='/signup' element={<Signup/>} />
           <Route path='/productinfo/:id' element={<ProductInfo/>} />
+          <Route path='/productInfo2/:id' element={<ProductInfo2/>} />
           <Route path='/addproduct' element={
             <ProtectedRouteForAdmin>
               <AddProduct/>

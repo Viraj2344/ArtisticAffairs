@@ -2,18 +2,16 @@ import React from 'react';
 
 const ProductCard = () => {
   const mediaItems = [
-    { type: 'image', src: 'https://slickstiles.com/cdn/shop/files/Pink_Watercolor_Abstract_Cozy_Vibes_Square_Pillow.png?v=1693224267&width=1000', link: '/allproducts', text: 'All Collections' },
-    { type: 'image', src: 'https://mind-spark.org/artisticaffairs/assets/anime.PNG', link: '/animecases', text: '' },
-    { type: 'image', src: 'https://mind-spark.org/artisticaffairs/assets/marvel.PNG', link: '/marvelcases', text: '' },
-    { type: 'image', src: 'https://mind-spark.org/artisticaffairs/assets/asthetic.PNG', link: '/aestheticcases', text: '' },
-    { type: 'image', src: 'https://mind-spark.org/artisticaffairs/assets/taylorswift.PNG', link: '/travelcases', text: '' },
-    { type: 'image', src: 'https://slickstiles.com/cdn/shop/files/Pink_Watercolor_Abstract_Cozy_Vibes_Square_Pillow_5.png?v=1693225180&width=1000', link: '/hippietrippiecases', text: 'Hippie Trippie Case' },
-    { type: 'image', src: 'https://slickstiles.com/cdn/shop/files/Pink_Watercolor_Abstract_Cozy_Vibes_Square_Pillow.png?v=1693224267&width=1000', link: '/animecases', text: 'Anime Cases' },
-    { type: 'image', src: 'https://slickstiles.com/cdn/shop/files/Pink_Watercolor_Abstract_Cozy_Vibes_Square_Pillow_1.png?v=1693224199&width=1000', link: '/cricketcases', text: 'Cricket Cases' },
-    { type: 'image', src: 'https://slickstiles.com/cdn/shop/files/Pink_Watercolor_Abstract_Cozy_Vibes_Square_Pillow_5.png?v=1693225180&width=1000', link: '/footballcases', text: 'Football Cases' },
-    { type: 'image', src: 'https://slickstiles.com/cdn/shop/files/Pink_Watercolor_Abstract_Cozy_Vibes_Square_Pillow.png?v=1693224267&width=1000', link: '/musiccases', text: 'Music Cases' },
-    { type: 'image', src: 'https://slickstiles.com/cdn/shop/files/Pink_Watercolor_Abstract_Cozy_Vibes_Square_Pillow_1.png?v=1693224199&width=1000', link: '/carsbikescases', text: 'Cars/Bikes Case' },
-    { type: 'image', src: 'https://slickstiles.com/cdn/shop/files/Pink_Watercolor_Abstract_Cozy_Vibes_Square_Pillow_5.png?v=1693225180&width=1000', link: '/gamingcases', text: 'Gaming Cases' },
+    { type: 'image', src: 'https://slickstiles.com/cdn/shop/files/Pink_Watercolor_Abstract_Cozy_Vibes_Square_Pillow.png?v=1693224267&width=1000', link: '/MarvelCollection', text: 'Marvel Collection' },
+    { type: 'image', src: 'https://mind-spark.org/artisticaffairs/assets/anime.PNG',                                                              link: '/BTSCollection', text: 'BTS Collection' },
+    { type: 'image', src: 'https://mind-spark.org/artisticaffairs/assets/marvel.PNG',                                                             link: '/SportsCollection', text: '' },
+    { type: 'image', src: 'https://mind-spark.org/artisticaffairs/assets/asthetic.PNG',                                                           link: '/AestheticCollection', text: '' },
+    { type: 'image', src: 'https://mind-spark.org/artisticaffairs/assets/taylorswift.PNG',                                                        link: '/GymCollection', text: '' },
+    { type: 'image', src: 'https://slickstiles.com/cdn/shop/files/Pink_Watercolor_Abstract_Cozy_Vibes_Square_Pillow_5.png?v=1693225180&width=1000',link: '/TravelCollection', text: '' },
+    { type: 'image', src: 'https://slickstiles.com/cdn/shop/files/Pink_Watercolor_Abstract_Cozy_Vibes_Square_Pillow.png?v=1693224267&width=1000', link: '/AnimeCollection', text: '' },
+    { type: 'image', src: 'https://slickstiles.com/cdn/shop/files/Pink_Watercolor_Abstract_Cozy_Vibes_Square_Pillow_1.png?v=1693224199&width=1000',link: '/MemeCollection', text: '' },
+    { type: 'image', src: 'https://slickstiles.com/cdn/shop/files/Pink_Watercolor_Abstract_Cozy_Vibes_Square_Pillow_5.png?v=1693225180&width=1000',link: '/DisneyCollection', text: '' },
+
   ];
 
   return (
@@ -22,10 +20,10 @@ const ProductCard = () => {
         <a
           key={index}
           href={media.link}
-          target="_blank"
+
           rel="noopener noreferrer"
           className="productcard group relative flex-shrink-0 overflow-hidden bg-gray-100 hover:bg-gray-300 rounded-2xl transition duration-300 transform hover:scale-105"
-          style={{ minWidth: '250px', maxWidth: '350px', height: '350px' }}
+          style={{ minWidth: '250px', maxWidth: '300px', height: '300px' }}
         >
           {media.type === 'video' ? (
             <video
@@ -38,7 +36,7 @@ const ProductCard = () => {
             <img
               src={media.src}
               alt={`Image ${index + 1}`}
-              className="w-full h-full object-cover border-white border-4 rounded-2xl" 
+              className="w-full h-full object-cover border-pink-300 border-2 rounded-2xl" 
             />
           )}
         

@@ -9,7 +9,7 @@ import './herosection.css';
 function HeroSection() {
   const images = [
     {
-      desktop: 'http://mind-spark.org/artisticaffairs/assets/Untitled%20design%20(31).jpg',
+      desktop: 'http://artisticaffairs.co.in/images/heroSectionImages/Untitled%20design%20(31).jpg',
       mobile: 'https://slickstiles.com/cdn/shop/files/Celebrate_Love_1080x1080_8e60ff1b-8583-4155-bf6e-304d41c37dae.jpg?v=1701367568&width=800',
     },
     {

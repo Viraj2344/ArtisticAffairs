@@ -8,7 +8,7 @@ import { addToCart } from '../../redux/cartSlice';
 import ImageGrid from '../../components/imagegrid/Imagegrid';
 import ReactSlider from 'react-slider';
 
-function Mugs() {
+function Tumblers() {
   const context = useContext(myContext);
   const {
     mode,
@@ -25,7 +25,7 @@ function Mugs() {
   const cartItems = useSelector((state) => state.cart);
   console.log(cartItems);
 
-  const constantSecondCategory = "Mugs"; // Set your constant category here
+  const constantSecondCategory = "Tumblers"; // Set your constant category here
 
   const [selectedDiscountRange, setSelectedDiscountRange] = useState([0, 2000]); // Set your initial range
 
@@ -66,7 +66,7 @@ function Mugs() {
               }`}
               style={{ fontFamily: 'Salsa' }}
             >
-              MUGS
+              TUMBLERS
             </h1>
           </div>
           <ImageGrid />
@@ -137,4 +137,4 @@ function Mugs() {
   );
 }
 
-export default Mugs;
+export default Tumblers;

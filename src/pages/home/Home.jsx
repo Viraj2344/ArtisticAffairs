@@ -14,7 +14,7 @@ import HelpSection from '../../components/help/Help'
 import ProductSpecificationsTable from '../../components/productSpecifications/ProductSpecifications'
 import SlidingText from '../../components/bestcase/Bestcase'
 import BigText from '../../components/bigcomponent/Bigcomponent'
-import SareeCases from '../sareecases/SareeCases'
+
 import products from '../../components/products/products'
 
 function Home() {
@@ -27,10 +27,12 @@ function Home() {
       <SlidingText />
       {/* <Track /> */}
       <Parallax />
+     
       <ProductCard />
-     <BigText />
+      <Testimonial />
+
      <SingleImage />
-      <ProductSpecificationsTable />
+      {/* <ProductSpecificationsTable /> */}
       <HelpSection />
 
    

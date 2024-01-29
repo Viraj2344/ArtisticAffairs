@@ -14,4 +14,8 @@
   .scrollbar-hidden::-webkit-scrollbar-track {
     background-color: transparent;
   }
+
+  .mediatext{
+    border-top-right-radius: 13px;
+  }
   

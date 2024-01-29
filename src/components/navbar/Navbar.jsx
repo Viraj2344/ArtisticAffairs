@@ -93,17 +93,16 @@ function Navbar() {
 
   const collections = [
 
-    { name: 'Saree Cases', link: '/sareecases' },
-    { name: 'Marvel Cases', link: '/marvelcases' },
-    { name: 'Aesthetic Cases', link: '/aestheticcases' },
-    { name: 'Travel Case', link: '/travelcases' },
-    { name: 'Hippie Trippie Case', link: '/hippietrippiecases' },
-    { name: 'Anime Cases', link: '/animecases' },
-    { name: 'Cricket Cases', link: '/cricketcases' },
-    { name: 'Football Cases', link: '/footballcases' },
-    { name: 'Music Cases', link: '/musiccases' },
-    { name: 'Cars/Bikes Case', link: '/carsbikescases' },
-    { name: 'Gaming Cases', link: '/gamingcases' },
+    { name: 'Marvel Collection', link: '/MarvelCollection' },
+    { name: 'BTS Collection', link: '/BTSCollection' },
+    { name: 'Sports Collection', link: '/SportsCollection' },
+    { name: 'Aesthetic Collection', link: '/AestheticCollection' },
+    { name: 'Gym Collection', link: '/GymCollection' },
+    { name: 'Travel Collection', link: '/TravelCollection' },
+    { name: 'Anime Collection', link: '/AnimeCollection' },
+    { name: 'Meme Collection', link: '/MemeCollection' },
+    { name: 'Disney Collection', link: '/DisneyCollection' },
+
   ];
 
   return (
@@ -161,12 +160,17 @@ function Navbar() {
                   <Link to={'/allproducts'} className=' font-medium text-white' style={{ color: mode === 'dark' ? 'white' : '' }}>
                     All Products
                   </Link>
+
                 </div>
+               <div><Link to={'/aboutUs'} className=' font-medium text-white' style={{ color: mode === 'dark' ? 'white' : '' }}>
+                    About Us
+                  </Link></div> 
+
+
                  
                <div className=''> <CollectionsDropdown collections={collections} mode={mode} /></div>  
             
-                    
-              
+               
                   {user?.user?.email === 'virajbakshi083@gmail.com' ? (
                     <div className='flow-root'>
                       <Link to={'/dashboard'} className='-m-2 block p-2 font-medium text-white' style={{ color: mode === 'dark' ? 'white' : '' }}>
@@ -181,6 +185,15 @@ function Navbar() {
                     Custom Cases
                   </Link>
                   </div>
+                       
+         
+                  
+                  {user ? <div className="flow-root">
+                       <Link to={'/order'} style={{ color: mode === 'dark' ? 'white' : '', }} className="-m-2 block p-2 font-medium text-white">
+                         Orders
+                       </Link>
+                     </div> : ""}
+              
                   {user ? (
                     <div className='flow-root'>
                       <a onClick={logout} className='-m-2 block p-2 font-medium text-white cursor-pointer' style={{ color: mode === 'dark' ? 'white' : '' }}>
@@ -238,8 +251,12 @@ function Navbar() {
      <Link to={'/allproducts'} className='font-medium text-lg flex items-center nav-link' style={{ color: mode === 'dark' ? 'white' : '' }}>
   <span className='mx-2 text-white'>All Products</span>
 </Link>
+<Link to={'/aboutUs'} className='font-medium text-lg flex items-center nav-link' style={{ color: mode === 'dark' ? 'white' : '' }}>
+  <span className='mx-2 text-white'>About Us</span>
+</Link>
 
 <CollectionsDropdown collections={collections} mode={mode} />
+
 
 <Link to={'/customcases'} className='font-medium text-lg flex items-center nav-link' style={{ color: mode === 'dark' ? 'white' : '' }}>
   <span className='mx-2 text-white'>Custom Products</span>
@@ -250,18 +267,19 @@ function Navbar() {
     <span className='mx-2 text-white'>Admin</span>
   </Link>
 ) : (
+  
   ''
 )}
-
-{user ? (
-  <a onClick={logout} className='font-medium cursor-pointer text-lg flex items-center nav-link' style={{ color: mode === 'dark' ? 'white' : '' }}>
-    <span className='mx-2 text-white'>Logout</span>
-  </a>
-) : (
-  <Link to={'/signup'} className='font-medium cursor-pointer text-lg flex items-center nav-link' style={{ color: mode === 'dark' ? 'white' : '' }}>
-    <span className='mx-2 text-white'>Signup</span>
-  </Link>
-)}
+  
+                {user ?  <Link to={'/order'} className="font-medium cursor-pointer text-lg flex items-center nav-link " style={{ color: mode === 'dark' ? 'white' : '', }}>
+                <span className='mx-2 text-white'>Orders</span>
+                  </Link> :   <Link to={'/signup'}  className="tfont-medium cursor-pointer text-lg flex items-center nav-link" style={{ color: mode === 'dark' ? 'white' : '', }}>
+                  <span className='mx-2 text-white'>Signup</span>
+                    </Link>}
+                   
+                    {user ?   <a onClick={logout} className='font-medium cursor-pointer text-lg flex items-center nav-link' style={{ color: mode === 'dark' ? 'white' : '' }}>
+                      <span className='mx-2 text-white'>Logout</span>
+                    </a> : ""}
 
               </div>
 

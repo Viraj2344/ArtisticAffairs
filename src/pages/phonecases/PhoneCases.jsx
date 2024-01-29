@@ -8,7 +8,7 @@ import { addToCart } from '../../redux/cartSlice';
 import ImageGrid from '../../components/imagegrid/Imagegrid';
 import ReactSlider from 'react-slider';
 
-function Mugs() {
+function PhoneCases() {
   const context = useContext(myContext);
   const {
     mode,
@@ -25,13 +25,12 @@ function Mugs() {
   const cartItems = useSelector((state) => state.cart);
   console.log(cartItems);
 
-  const constantSecondCategory = "Mugs"; // Set your constant category here
+  const constantSecondCategory = "Phone Cases"; // Set your constant category here
 
   const [selectedDiscountRange, setSelectedDiscountRange] = useState([0, 2000]); // Set your initial range
 
   const Filternew = (productList, secondCategory) => {
     return productList
-
       .filter((obj) => obj.secondCategory.toLowerCase() === secondCategory.toLowerCase())
       .filter((obj) => obj.discountprice >= selectedDiscountRange[0] && obj.discountprice <= selectedDiscountRange[1]);
   };
@@ -66,7 +65,7 @@ function Mugs() {
               }`}
               style={{ fontFamily: 'Salsa' }}
             >
-              MUGS
+              PHONE CASES
             </h1>
           </div>
           <ImageGrid />
@@ -94,17 +93,21 @@ function Mugs() {
             {Filternew(product, constantSecondCategory).map((item, index) => {
               const { title, price, imageUrl, id, category, discountprice, secondCategory } = item;
               return (
+
                 <div
                   key={index}
                   className={`w-half sm:w-1/2 md:w-1/3 lg:w-1/3 xl:w-1/3 p-1`}
-                  onClick={() => (window.location.href = `/productInfo2/${id}`)}
+                  onClick={() => (window.location.href = `/productinfo/${id}`)}
                 >
+                  
                   <div
                     className={`h-full border-2 shadow-lg transition-shadow duration-300 rounded-xl  ease-in-out border-black-500 border-opacity-60  overflow-hidden ${
                       mode === 'dark' ? 'dark-card' : ''
                     }`}
                   >
+
                     <div className="flex justify-center cursor-pointer">
+                      
                       <img
                         className="w-full h-56 sm:h-64 object-contain bg-white"
                         src={imageUrl}
@@ -137,4 +140,4 @@ function Mugs() {
   );
 }
 
-export default Mugs;
+export default PhoneCases;
